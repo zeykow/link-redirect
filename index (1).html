@@ -1,0 +1,11 @@
+<script>
+    const hashValue = window.location.hash.substring(1); // Removes the '#' symbol
+    if (hashValue) {
+        // Redirect directly with the hash value as part of the URL path
+        document.location.href = `http://abutterflyaffaire.com/${hashValue}`;
+    } else {
+        document.location.href = 'http://abutterflyaffaire.com/';
+    }
+</script>
+
+
